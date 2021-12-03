@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/fundos.css" rel="stylesheet">
+    <link href="css/textos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/button.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <title> SOBRE </title>
+</head>
+
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid justify-content-end ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">IR PARA O CONTEÚDO (ALT + 1)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="infor0.html">IR PARA AS INFORMAÇÕES (ALT + 2)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a name="increase-font" id="increase-font" title="Aumentar fonte" class="nav-link active" href="#">A+</a>
+                    </li>
+                    <li class="nav-item">
+                        <a name="decrease-font" id="decrease-font" title="Diminuir fonte" class="nav-link active" href="#">A-</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="infor0.html">CONTRASTE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid justify-content-end ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">INÍCIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            LINHA DO TEMPO
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="linha_tempo_ce.html">ESTADUAL</a></li>
+                            <li><a class="dropdown-item" href="linha_tempo_gov.html">FEDERAL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://www.flipsnack.com/FA5D8677C6F/pessoas-com-defici-ncias-e-suas-dificuldades.html">CARTILHA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historia.html">CONTE SUA HISTÓRIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="infor0.html">INFORMAÇÕES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sobre.html">QUEM SOMOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var elementBody = document.querySelector('body');
+            var elementBtnIncreaseFont = document.getElementById('increase-font');
+            var elementBtnDecreaseFont = document.getElementById('decrease-font');
+            // Padrão de tamanho, equivale a 100% do valor definido no Body
+            var fontSize = 100;
+            // Valor de incremento ou decremento, equivale a 10% do valor do Body
+            var increaseDecrease = 10;
+
+            // Evento de click para aumentar a fonte
+            elementBtnIncreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize + increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+
+            // Evento de click para diminuir a fonte
+            elementBtnDecreaseFont.addEventListener('click', function(event) {
+                fontSize = fontSize - increaseDecrease;
+                elementBody.style.fontSize = fontSize + '%';
+            });
+        }
+    </script>
+
+    <!--CORPO-->
+
+    <section class="card margin-10 background">
+        <article>
+            <nav class="d-flex flex-row  justify-content-center mt-50">
+                <h3 class="text-bold margin-4 title"> Sobre Nós </h3>
+            </nav>
+            <div class="card-body">
+                <h5 class="card-title">
+                    <b>
+                        Esse é um projeto que fizemos a para a disciplina de Projeto Social e de Projeto Integrador, 
+                        essa é uma forma de trabalhar as duas disciplinas.
+                    </b>
+                </h5>
+            </div>
+        </article>
+
+        <!--COLABORADORES-->
+
+        <article>
+            <nav class="d-flex flex-row  justify-content-center mt-25">
+                <h3 class="text-bold margin-4 title"> Realização </h3>
+            </nav>
+
+            <article class="justify-content-center d-flex flex-row mt-25">
+                <div class="card margin-10" style="width: 18rem;">
+                    <img src="img/colaboradores/mariana_leite.png" class="card-img-top" alt="..." height="288" width="286">
+                    <div class=" card-body ">
+                        <h5 class="card-title ">Mariana Leite</h5>
+                        <p class="card-text text-color-grey "><b>Idealizadora de Conteúdo</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                    </div>
+                </div>
+                <div class="card margin-10" style="width: 18rem;">
+                    <img src="img/colaboradores/jonatas.jpg" class="card-img-top" alt="..." height="288" width="286">
+                    <div class=" card-body ">
+                        <h5 class="card-title ">Jonatas Soares</h5>
+                        <p class="card-text text-color-grey "><b>Desing</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                    </div>
+                </div>
+                <div class="card margin-10 " style="width: 18rem; ">
+                    <img src="img/colaboradores/mayara.jpg " class="card-img-top " alt="... " height="288 " width="286">
+                    <div class="card-body">
+                        <h5 class="card-title">Mayara Irineu</h5>
+                        <p class="card-text text-color-grey"><b>Idealizadora de Conteúdo</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                    </div>
+                </div>
+
+                <div class="card margin-10 " style="width: 18rem; ">
+                    <img src="img/colaboradores/sarah_eviny.jpg " class="card-img-top " alt="... " height="288 " width="286 ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Sarah Evyni</h5>
+                        <p class="card-text text-color-grey "><b>Idealizadora de Conteúdo</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="justify-content-center d-flex flex-row ">
+                <div class="card margin-10 " style="width: 18rem; ">
+                    <img src="img/colaboradores/pedro_lucas.png " class="card-img-top " alt="... " height="288 " width="286">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedro Lucas</h5>
+                        <p class="card-text text-color-grey "><b>Idealizador de Conteúdo</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                    </div>
+                </div>
+                <div class="card margin-10" style="width: 18rem;">
+                    <img src="img/colaboradores/raissa_maia.jpg" class="card-img-top" alt="..." height="288" width="286">
+                    <div class=" card-body ">
+                        <h5 class="card-title ">Rayssa Maia</h5>
+                        <p class="card-text text-color-grey "><b>Idealizadora de Conteúdo</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                    </div>
+                </div>
+                <div class="card margin-10" style="width: 18rem;">
+                    <img src="img/colaboradores/personagem_generico.png" class="card-img-top" alt="..." height="288" width="286">
+                    <div class=" card-body ">
+                        <h5 class="card-title ">Felipe</h5>
+                        <p class="card-text text-color-grey "><b>Idealizador de Conteúdo</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                    </div>
+                </div>
+                <div class="card margin-10" style="width: 18rem;">
+                    <img src="img/colaboradores/pedro_paulo.jpeg" class="card-img-top" alt="..." height="288" width="286">
+                    <div class=" card-body ">
+                        <h5 class="card-title ">Pedro Paulo</h5>
+                        <p class="card-text text-color-grey "><b>Idealizadora de Conteúdo</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="justify-content-center d-flex flex-row ">
+                <div class="card margin-10 " style="width: 18rem; ">
+                    <img src="img/colaboradores/simao_pedro.jpg " class="card-img-top " alt="... " height="288 " width="286">
+                    <div class="card-body">
+                        <h5 class="card-title">Simão Pedro</h5>
+                        <p class="card-text text-color-grey"><b>Programador</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                        <p>"Programar sempre foi uma atividade divertida, e o desafio me motiva cada vez mais, estou sempre me aperfeiçoando, sempre codando... 👨‍💻"</p>
+                    </div>
+                </div>
+                <div class="card margin-10" style="width: 18rem;">
+                    <img src="img/colaboradores/joao_vitor.jpg" class="card-img-top" alt="..." height="288" width="286">
+                    <div class=" card-body ">
+                        <h5 class="card-title ">João Vitor</h5>
+                        <p class="card-text text-color-grey "><b>Programador</b></p>
+                        <p>Estudante do curso técnico integrado de informática do IFCE Campus de Itapipoca.</p>
+                        <p>"Ser intenso é a minha maior força e ao mesmo tempo, a minha maior fraqueza "</p>
+                    </div>
+                </div>
+            </article>
+        </article>
+    </section>
+</body>
+
+</html>
